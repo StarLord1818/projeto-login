@@ -12,6 +12,7 @@ Typical Device Breakpooints
     }
     #login {
         width: 90vw;
+        height: 300px;
     }
     #login > #imagem {
         float: left;
@@ -29,6 +30,8 @@ Typical Device Breakpooints
     }
     #login {
         width: 950px;
+        height: 360px;
+
     }
     #login > #imagem {
         float: right;
@@ -44,5 +47,6 @@ Typical Device Breakpooints
     }
     #formulario > p {
         font-size: 1.2em;
+        margin: 20px 0px;
     }
 }

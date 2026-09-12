@@ -25,13 +25,13 @@ main {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     background-color: white;
     width: 250px;
-    height: 515px;
+    height: 550px;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.671);
+    transform: translate(-50%, -50%);
     transition: width 1s, height 1s;
     transition-timing-function: ease;
 }
@@ -40,8 +40,7 @@ main {
     background: #5F2C82 url('../imagens/pexels-esh3rwey-9402247.jpg') no-repeat;
     background-size: cover;
     background-position: center;
-    height: 200px;
-    
+    height: 200px;   
 }
 #login > #formulario {
     display: block;
@@ -52,19 +51,38 @@ main {
     margin-bottom: 10px;
 }
 #formulario > p {
-    font-size: 0.8em;
+    font-size: 1em;
 }
 form > .campo {
     background-color: #5F2C82;
     width: 100%;
     display: block;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 8px;
+    border: 2px solid #5F2C82;
     margin: 5px 0px;
 }
 label {
     font-size: 0.8em;
     display: none;
+}
+.campo > span {
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+.campo > input {
+    background-color: #53aaa7;
+    font-size: 1em;
+    width: calc(100% - 45px);
+    height: 100%;
+    border-radius: 8px;
+    padding: 4px;
+    transform: translateY(-14px);
+}
+.campo input:focus-within {
+    background-color: white;
 }
 form > input[type=submit] {
     display: block;
